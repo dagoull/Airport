@@ -73,6 +73,21 @@ public class FlightPassengerTest {
                     () -> assertEquals(flight, juan.getFlight())
             );
         }
+
+        @Test
+        @DisplayName("Se puede cambiar el vuelo de un pasajero manualmente")
+        public void testPassengerChangeFlight() {
+            Flight newFlight = new Flight("DV155", 150);
+            assertAll("Verificando que el cambio de vuelo funciona correctamente",
+                    () -> assertNull(paco.getFlight()),
+                    () -> assertEquals(0, flight.getNumberOfPassengers()),
+                    () -> assertTrue(flight.addPassenger(paco)),
+                    () -> assertEquals(1 ,flight.getNumberOfPassengers()),
+                    () -> assertEquals(flight, paco.getFlight())
+            );
+            paco.joinFlight(newFlight);
+            assertEquals(newFlight, paco.getFlight());
+        }
     }
 
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="es.ull.flightspassengers.FlightPassengerTest" time="0.023" tests="8" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="es.ull.flightspassengers.FlightPassengerTest" time="0.027" tests="9" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ES"/>
     <property name="sun.boot.library.path" value="C:\Users\Usuario\.jdks\openjdk-17\bin"/>
-    <property name="sun.java.command" value="C:\Users\Usuario\AppData\Local\Temp\surefire5278153881558438095\surefirebooter2828241458688783548.jar C:\Users\Usuario\AppData\Local\Temp\surefire5278153881558438095 2021-12-12T13-49-23_340-jvmRun1 surefire10802787673887176589tmp surefire_017334701812842361354tmp"/>
+    <property name="sun.java.command" value="C:\Users\Usuario\AppData\Local\Temp\surefire15042623373395807884\surefirebooter3310509113220925278.jar C:\Users\Usuario\AppData\Local\Temp\surefire15042623373395807884 2021-12-12T13-57-18_657-jvmRun1 surefire16314572483145947610tmp surefire_01253403401256816175tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\Usuario\Desktop\Universidad\Cuarto\Laboratorio\Airport\target\test-classes;C:\Users\Usuario\Desktop\Universidad\Cuarto\Laboratorio\Airport\target\classes;C:\Users\Usuario\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;C:\Users\Usuario\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Usuario\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Usuario\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;C:\Users\Usuario\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;C:\Users\Usuario\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Usuario\AppData\Local\Temp\surefire5278153881558438095\surefirebooter2828241458688783548.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Usuario\AppData\Local\Temp\surefire15042623373395807884\surefirebooter3310509113220925278.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17+35-2724"/>
@@ -58,11 +58,12 @@
     <property name="java.class.version" value="61.0"/>
   </properties>
   <testcase name="testPassengerFlight" classname="es.ull.flightspassengers.FlightPassengerTest$PassengerMethods" time="0"/>
+  <testcase name="testPassengerChangeFlight" classname="es.ull.flightspassengers.FlightPassengerTest$PassengerMethods" time="0"/>
   <testcase name="testFlightAddPassenger5{RepetitionInfo}[1]" classname="es.ull.flightspassengers.FlightPassengerTest$FlightMethods" time="0.003"/>
   <testcase name="testFlightAddPassenger5{RepetitionInfo}[2]" classname="es.ull.flightspassengers.FlightPassengerTest$FlightMethods" time="0.001"/>
-  <testcase name="testFlightAddPassenger5{RepetitionInfo}[3]" classname="es.ull.flightspassengers.FlightPassengerTest$FlightMethods" time="0"/>
-  <testcase name="testFlightAddPassenger5{RepetitionInfo}[4]" classname="es.ull.flightspassengers.FlightPassengerTest$FlightMethods" time="0.001"/>
-  <testcase name="testFlightAddPassenger5{RepetitionInfo}[5]" classname="es.ull.flightspassengers.FlightPassengerTest$FlightMethods" time="0"/>
+  <testcase name="testFlightAddPassenger5{RepetitionInfo}[3]" classname="es.ull.flightspassengers.FlightPassengerTest$FlightMethods" time="0.001"/>
+  <testcase name="testFlightAddPassenger5{RepetitionInfo}[4]" classname="es.ull.flightspassengers.FlightPassengerTest$FlightMethods" time="0"/>
+  <testcase name="testFlightAddPassenger5{RepetitionInfo}[5]" classname="es.ull.flightspassengers.FlightPassengerTest$FlightMethods" time="0.001"/>
   <testcase name="testFlightRemovePassenger" classname="es.ull.flightspassengers.FlightPassengerTest$FlightMethods" time="0.002"/>
-  <testcase name="testFlightAddPassenger" classname="es.ull.flightspassengers.FlightPassengerTest$FlightMethods" time="0.001"/>
+  <testcase name="testFlightAddPassenger" classname="es.ull.flightspassengers.FlightPassengerTest$FlightMethods" time="0.002"/>
 </testsuite>
