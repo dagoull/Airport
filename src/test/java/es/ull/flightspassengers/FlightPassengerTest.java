@@ -28,9 +28,9 @@ public class FlightPassengerTest {
         public void testFlightAddPassenger() {
             assertAll("Comprobando que se pueden añadir pasajeros de la forma correcta",
                     () -> assertEquals(0, flight.getNumberOfPassengers()),
-                    () -> assertEquals(true, flight.addPassenger(paco)),
+                    () -> assertTrue(flight.addPassenger(paco)),
                     () -> assertEquals(1, flight.getNumberOfPassengers()),
-                    () -> assertEquals(true, flight.addPassenger(juan)),
+                    () -> assertTrue(flight.addPassenger(juan)),
                     () -> assertEquals(2, flight.getNumberOfPassengers())
             );
         }
@@ -42,6 +42,20 @@ public class FlightPassengerTest {
                 flight.addPassenger(juan);
             }
             assertAll("Verificando que no se pueden añadir mas de un mismo pasajero",
+                    () -> assertEquals(1, flight.getNumberOfPassengers())
+            );
+        }
+
+        @Test
+        @DisplayName("Se pueden eliminar pasajeros del vuelo")
+        public void testFlightRemovePassenger() {
+            assertAll("Verificando que se pueden eliminar pasajeros del vuelo",
+                    () -> assertEquals(0, flight.getNumberOfPassengers()),
+                    () -> assertTrue(flight.addPassenger(paco)),
+                    () -> assertEquals(1, flight.getNumberOfPassengers()),
+                    () -> assertTrue(flight.addPassenger(juan)),
+                    () -> assertEquals(2, flight.getNumberOfPassengers()),
+                    () -> assertTrue(flight.removePassenger(paco)),
                     () -> assertEquals(1, flight.getNumberOfPassengers())
             );
         }

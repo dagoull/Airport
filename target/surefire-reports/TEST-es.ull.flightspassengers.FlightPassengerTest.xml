@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="es.ull.flights.FlightTest" time="0.038" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="es.ull.flightspassengers.FlightPassengerTest" time="0.016" tests="7" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -57,5 +57,11 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testAtributosFlight" classname="es.ull.flights.FlightTest$NormalFlight" time="0.03"/>
+  <testcase name="testFlightAddPassenger5{RepetitionInfo}[1]" classname="es.ull.flightspassengers.FlightPassengerTest$FlightMethods" time="0.003"/>
+  <testcase name="testFlightAddPassenger5{RepetitionInfo}[2]" classname="es.ull.flightspassengers.FlightPassengerTest$FlightMethods" time="0.001"/>
+  <testcase name="testFlightAddPassenger5{RepetitionInfo}[3]" classname="es.ull.flightspassengers.FlightPassengerTest$FlightMethods" time="0.001"/>
+  <testcase name="testFlightAddPassenger5{RepetitionInfo}[4]" classname="es.ull.flightspassengers.FlightPassengerTest$FlightMethods" time="0.001"/>
+  <testcase name="testFlightAddPassenger5{RepetitionInfo}[5]" classname="es.ull.flightspassengers.FlightPassengerTest$FlightMethods" time="0"/>
+  <testcase name="testFlightRemovePassenger" classname="es.ull.flightspassengers.FlightPassengerTest$FlightMethods" time="0.002"/>
+  <testcase name="testFlightAddPassenger" classname="es.ull.flightspassengers.FlightPassengerTest$FlightMethods" time="0.001"/>
 </testsuite>
