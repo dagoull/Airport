@@ -61,4 +61,18 @@ public class FlightPassengerTest {
         }
     }
 
+    @Nested
+    @DisplayName("Funciones de los pasajeros")
+    class PassengerMethods {
+
+        @Test
+        @DisplayName("Se puede ver el vuelo al que esta asignado un determinado pasajero")
+        public void testPassengerFlight() {
+            assertAll("Verificando que se puede ver el vuelo de un pasajero",
+                    () -> assertTrue(flight.addPassenger(juan)),
+                    () -> assertEquals(flight, juan.getFlight())
+            );
+        }
+    }
+
 }
