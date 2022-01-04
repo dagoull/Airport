@@ -5,6 +5,12 @@ import es.ull.passengers.Passenger;
 import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
 
+/*****************************************************************************
+ * @class FlightPassengerTest
+ * @brief Pruebas para comprobar el correcto funcionamiento de las conexiones entre las clases Flight y Passenger
+ * @author alu0101202556
+ * @version 1.0
+ ****************************************************************************/
 @DisplayName("Pruebas para los métodos de Flight y Passenger")
 @Nested
 public class FlightPassengerTest {
@@ -14,6 +20,7 @@ public class FlightPassengerTest {
 
     @BeforeEach
     void setUp() {
+        //Para comprobar las conexiones se crera un vuelo y dos pasajeros para cada prueba
         flight = new Flight("DV123", 100);
         paco = new Passenger("01","Paco","US");
         juan = new Passenger("02","Juan","US");

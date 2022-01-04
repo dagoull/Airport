@@ -1,0 +1,101 @@
+\hypertarget{classes_1_1ull_1_1flights_1_1_flight}{}\doxysection{es.\+ull.\+flights.\+Flight Class Reference}
+\label{classes_1_1ull_1_1flights_1_1_flight}\index{es.ull.flights.Flight@{es.ull.flights.Flight}}
+
+
+\mbox{\hyperlink{classes_1_1ull_1_1flights_1_1_flight}{Flight}} que sirve para manejar el numero y los datos de pasajeros de un vuelo determinado.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classes_1_1ull_1_1flights_1_1_flight_aa5ad30bdd0beaab1b4eee82226e14149}{Flight}} (String flight\+Number, int seats)
+\item 
+String \mbox{\hyperlink{classes_1_1ull_1_1flights_1_1_flight_a54acb8002451233c0627f67d7da6cdff}{get\+Flight\+Number}} ()
+\item 
+int \mbox{\hyperlink{classes_1_1ull_1_1flights_1_1_flight_a187a56be3a80aeed3f86f5af788cefe4}{get\+Number\+Of\+Passengers}} ()
+\item 
+boolean \mbox{\hyperlink{classes_1_1ull_1_1flights_1_1_flight_af91e68d0b5783e3593f4dac614e8f6df}{add\+Passenger}} (\mbox{\hyperlink{classes_1_1ull_1_1passengers_1_1_passenger}{Passenger}} passenger)
+\item 
+boolean \mbox{\hyperlink{classes_1_1ull_1_1flights_1_1_flight_aae162ee591aaab6ea905e8eb116b0b5a}{remove\+Passenger}} (\mbox{\hyperlink{classes_1_1ull_1_1passengers_1_1_passenger}{Passenger}} passenger)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classes_1_1ull_1_1flights_1_1_flight}{Flight}} que sirve para manejar el numero y los datos de pasajeros de un vuelo determinado. 
+
+\begin{DoxyAuthor}{Author}
+alu0101202556 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classes_1_1ull_1_1flights_1_1_flight_aa5ad30bdd0beaab1b4eee82226e14149}\label{classes_1_1ull_1_1flights_1_1_flight_aa5ad30bdd0beaab1b4eee82226e14149}} 
+\index{es.ull.flights.Flight@{es.ull.flights.Flight}!Flight@{Flight}}
+\index{Flight@{Flight}!es.ull.flights.Flight@{es.ull.flights.Flight}}
+\doxysubsubsection{\texorpdfstring{Flight()}{Flight()}}
+{\footnotesize\ttfamily es.\+ull.\+flights.\+Flight.\+Flight (\begin{DoxyParamCaption}\item[{String}]{flight\+Number,  }\item[{int}]{seats }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor de la clase 
+\begin{DoxyParams}{Parameters}
+{\em flight\+Number} & Numero del vuelo, la cadena debe de seguir la expresion regular de flight\+Number\+Regex \\
+\hline
+{\em seats} & Numero de asientos que pueden ser ocupados por pasajeros \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classes_1_1ull_1_1flights_1_1_flight_af91e68d0b5783e3593f4dac614e8f6df}\label{classes_1_1ull_1_1flights_1_1_flight_af91e68d0b5783e3593f4dac614e8f6df}} 
+\index{es.ull.flights.Flight@{es.ull.flights.Flight}!addPassenger@{addPassenger}}
+\index{addPassenger@{addPassenger}!es.ull.flights.Flight@{es.ull.flights.Flight}}
+\doxysubsubsection{\texorpdfstring{addPassenger()}{addPassenger()}}
+{\footnotesize\ttfamily boolean es.\+ull.\+flights.\+Flight.\+add\+Passenger (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classes_1_1ull_1_1passengers_1_1_passenger}{Passenger}}}]{passenger }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Agrega un pasajero al vuelo, si el numero de pasajeros es superior al de los asientos devuelve un error 
+\begin{DoxyParams}{Parameters}
+{\em passenger} & El pasajero que será añadido al vuelo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Si el pasajero fue añadido exitosamente devuelve un booleano en true 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classes_1_1ull_1_1flights_1_1_flight_a54acb8002451233c0627f67d7da6cdff}\label{classes_1_1ull_1_1flights_1_1_flight_a54acb8002451233c0627f67d7da6cdff}} 
+\index{es.ull.flights.Flight@{es.ull.flights.Flight}!getFlightNumber@{getFlightNumber}}
+\index{getFlightNumber@{getFlightNumber}!es.ull.flights.Flight@{es.ull.flights.Flight}}
+\doxysubsubsection{\texorpdfstring{getFlightNumber()}{getFlightNumber()}}
+{\footnotesize\ttfamily String es.\+ull.\+flights.\+Flight.\+get\+Flight\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Metodo para conseguir el atributo privado flight\+Number \begin{DoxyReturn}{Returns}
+Devuelve el numero del vuelo 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classes_1_1ull_1_1flights_1_1_flight_a187a56be3a80aeed3f86f5af788cefe4}\label{classes_1_1ull_1_1flights_1_1_flight_a187a56be3a80aeed3f86f5af788cefe4}} 
+\index{es.ull.flights.Flight@{es.ull.flights.Flight}!getNumberOfPassengers@{getNumberOfPassengers}}
+\index{getNumberOfPassengers@{getNumberOfPassengers}!es.ull.flights.Flight@{es.ull.flights.Flight}}
+\doxysubsubsection{\texorpdfstring{getNumberOfPassengers()}{getNumberOfPassengers()}}
+{\footnotesize\ttfamily int es.\+ull.\+flights.\+Flight.\+get\+Number\+Of\+Passengers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Metodo para conseguir el numero de pasajeros que estan asignados al vuelo \begin{DoxyReturn}{Returns}
+Devuelve el numero de pasajeros asignados al vuelo 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classes_1_1ull_1_1flights_1_1_flight_aae162ee591aaab6ea905e8eb116b0b5a}\label{classes_1_1ull_1_1flights_1_1_flight_aae162ee591aaab6ea905e8eb116b0b5a}} 
+\index{es.ull.flights.Flight@{es.ull.flights.Flight}!removePassenger@{removePassenger}}
+\index{removePassenger@{removePassenger}!es.ull.flights.Flight@{es.ull.flights.Flight}}
+\doxysubsubsection{\texorpdfstring{removePassenger()}{removePassenger()}}
+{\footnotesize\ttfamily boolean es.\+ull.\+flights.\+Flight.\+remove\+Passenger (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classes_1_1ull_1_1passengers_1_1_passenger}{Passenger}}}]{passenger }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Elimina un pasajero del vuelo 
+\begin{DoxyParams}{Parameters}
+{\em passenger} & El pasajero que quiere ser eliminado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Si la accion acurrio de forma exitosa, devuelve true 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/es/ull/flights/Flight.\+java\end{DoxyCompactItemize}

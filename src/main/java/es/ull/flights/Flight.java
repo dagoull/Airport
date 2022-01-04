@@ -27,6 +27,12 @@ import java.util.regex.Pattern;
 
 import es.ull.passengers.Passenger;
 
+/*****************************************************************************
+ * @class Flight
+ * @brief Flight que sirve para manejar el numero y los datos de pasajeros de un vuelo determinado
+ * @author alu0101202556
+ * @version 1.0
+ ****************************************************************************/
 public class Flight {
 
     private String flightNumber;
@@ -36,6 +42,11 @@ public class Flight {
     private static String flightNumberRegex = "^[A-Z]{2}\\d{3,4}$";
     private static Pattern pattern = Pattern.compile(flightNumberRegex);
 
+    /**
+     * Constructor de la clase
+     * @param flightNumber  Numero del vuelo, la cadena debe de seguir la expresion regular de flightNumberRegex
+     * @param seats         Numero de asientos que pueden ser ocupados por pasajeros
+     */
     public Flight(String flightNumber, int seats) {
         Matcher matcher = pattern.matcher(flightNumber);
         if (!matcher.matches()) {
@@ -45,14 +56,28 @@ public class Flight {
         this.seats = seats;
     }
 
+    /**
+     * Metodo para conseguir el atributo privado flightNumber
+     * @return  Devuelve el numero del vuelo
+     */
     public String getFlightNumber() {
         return flightNumber;
     }
 
+    /**
+     * Metodo para conseguir el numero de pasajeros que estan asignados al vuelo
+     * @return  Devuelve el numero de pasajeros asignados al vuelo
+     */
     public int getNumberOfPassengers() {
         return passengers.size();
     }
 
+    /**
+     * Agrega un pasajero al vuelo, si el numero de pasajeros es superior al de los asientos devuelve
+     * un error
+     * @param passenger El pasajero que será añadido al vuelo
+     * @return          Si el pasajero fue añadido exitosamente devuelve un booleano en true
+     */
     public boolean addPassenger(Passenger passenger) {
         if (getNumberOfPassengers() >= seats) {
             throw new RuntimeException("Not enough seats for flight " + getFlightNumber());
@@ -61,6 +86,11 @@ public class Flight {
         return passengers.add(passenger);
     }
 
+    /**
+     * Elimina un pasajero del vuelo
+     * @param passenger El pasajero que quiere ser eliminado
+     * @return          Si la accion acurrio de forma exitosa, devuelve true
+     */
     public boolean removePassenger(Passenger passenger) {
         passenger.setFlight(null);
         return passengers.remove(passenger);

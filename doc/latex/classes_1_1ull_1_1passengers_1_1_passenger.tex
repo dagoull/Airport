@@ -1,0 +1,122 @@
+\hypertarget{classes_1_1ull_1_1passengers_1_1_passenger}{}\doxysection{es.\+ull.\+passengers.\+Passenger Class Reference}
+\label{classes_1_1ull_1_1passengers_1_1_passenger}\index{es.ull.passengers.Passenger@{es.ull.passengers.Passenger}}
+
+
+\mbox{\hyperlink{classes_1_1ull_1_1passengers_1_1_passenger}{Passenger}} que maneja los datos de los pasajeros y sus respectivos vuelos.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classes_1_1ull_1_1passengers_1_1_passenger_a740acbb5a5a2fb7b9f94d2bc06650fb3}{Passenger}} (String identifier, String name, String country\+Code)
+\item 
+String \mbox{\hyperlink{classes_1_1ull_1_1passengers_1_1_passenger_a2477c2f0b9a49a9d9b47396ef0a8d231}{get\+Identifier}} ()
+\item 
+String \mbox{\hyperlink{classes_1_1ull_1_1passengers_1_1_passenger_a30bde0502748dd7880d0cec945be22c7}{get\+Name}} ()
+\item 
+String \mbox{\hyperlink{classes_1_1ull_1_1passengers_1_1_passenger_a0b10b5172260428e96e7238421568520}{get\+Country\+Code}} ()
+\item 
+\mbox{\hyperlink{classes_1_1ull_1_1flights_1_1_flight}{Flight}} \mbox{\hyperlink{classes_1_1ull_1_1passengers_1_1_passenger_a85cf4c7fae5768f0f9b895709e2551af}{get\+Flight}} ()
+\item 
+void \mbox{\hyperlink{classes_1_1ull_1_1passengers_1_1_passenger_ab502f5a4d9dde76595f7d1781683b08e}{join\+Flight}} (\mbox{\hyperlink{classes_1_1ull_1_1flights_1_1_flight}{Flight}} flight)
+\item 
+void \mbox{\hyperlink{classes_1_1ull_1_1passengers_1_1_passenger_a304d20a6a14fc06b986745b345720cde}{set\+Flight}} (\mbox{\hyperlink{classes_1_1ull_1_1flights_1_1_flight}{Flight}} flight)
+\item 
+\mbox{\Hypertarget{classes_1_1ull_1_1passengers_1_1_passenger_aa33b3b677588824d33c76a2950b180f1}\label{classes_1_1ull_1_1passengers_1_1_passenger_aa33b3b677588824d33c76a2950b180f1}} 
+String {\bfseries to\+String} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classes_1_1ull_1_1passengers_1_1_passenger}{Passenger}} que maneja los datos de los pasajeros y sus respectivos vuelos. 
+
+\begin{DoxyAuthor}{Author}
+alu0101202556 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classes_1_1ull_1_1passengers_1_1_passenger_a740acbb5a5a2fb7b9f94d2bc06650fb3}\label{classes_1_1ull_1_1passengers_1_1_passenger_a740acbb5a5a2fb7b9f94d2bc06650fb3}} 
+\index{es.ull.passengers.Passenger@{es.ull.passengers.Passenger}!Passenger@{Passenger}}
+\index{Passenger@{Passenger}!es.ull.passengers.Passenger@{es.ull.passengers.Passenger}}
+\doxysubsubsection{\texorpdfstring{Passenger()}{Passenger()}}
+{\footnotesize\ttfamily es.\+ull.\+passengers.\+Passenger.\+Passenger (\begin{DoxyParamCaption}\item[{String}]{identifier,  }\item[{String}]{name,  }\item[{String}]{country\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Construcor de la clase \mbox{\hyperlink{classes_1_1ull_1_1passengers_1_1_passenger}{Passenger}}, si se pasa un codigo de pais incorrecto no se podra crear al pasajero 
+\begin{DoxyParams}{Parameters}
+{\em identifier} & Identificador con el que se diferenciara a los distintos pasajeros \\
+\hline
+{\em name} & Nombre del pasajero \\
+\hline
+{\em country\+Code} & Codigo del pais donde recide \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classes_1_1ull_1_1passengers_1_1_passenger_a0b10b5172260428e96e7238421568520}\label{classes_1_1ull_1_1passengers_1_1_passenger_a0b10b5172260428e96e7238421568520}} 
+\index{es.ull.passengers.Passenger@{es.ull.passengers.Passenger}!getCountryCode@{getCountryCode}}
+\index{getCountryCode@{getCountryCode}!es.ull.passengers.Passenger@{es.ull.passengers.Passenger}}
+\doxysubsubsection{\texorpdfstring{getCountryCode()}{getCountryCode()}}
+{\footnotesize\ttfamily String es.\+ull.\+passengers.\+Passenger.\+get\+Country\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Metodo para devolver el codigo del pais del pasajero \begin{DoxyReturn}{Returns}
+Devuelve el atributo privado country\+Code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classes_1_1ull_1_1passengers_1_1_passenger_a85cf4c7fae5768f0f9b895709e2551af}\label{classes_1_1ull_1_1passengers_1_1_passenger_a85cf4c7fae5768f0f9b895709e2551af}} 
+\index{es.ull.passengers.Passenger@{es.ull.passengers.Passenger}!getFlight@{getFlight}}
+\index{getFlight@{getFlight}!es.ull.passengers.Passenger@{es.ull.passengers.Passenger}}
+\doxysubsubsection{\texorpdfstring{getFlight()}{getFlight()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classes_1_1ull_1_1flights_1_1_flight}{Flight}} es.\+ull.\+passengers.\+Passenger.\+get\+Flight (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Metodo para devolver el vuelo al que esta asignado del pasajero \begin{DoxyReturn}{Returns}
+Devuelve el atributo privado flight 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classes_1_1ull_1_1passengers_1_1_passenger_a2477c2f0b9a49a9d9b47396ef0a8d231}\label{classes_1_1ull_1_1passengers_1_1_passenger_a2477c2f0b9a49a9d9b47396ef0a8d231}} 
+\index{es.ull.passengers.Passenger@{es.ull.passengers.Passenger}!getIdentifier@{getIdentifier}}
+\index{getIdentifier@{getIdentifier}!es.ull.passengers.Passenger@{es.ull.passengers.Passenger}}
+\doxysubsubsection{\texorpdfstring{getIdentifier()}{getIdentifier()}}
+{\footnotesize\ttfamily String es.\+ull.\+passengers.\+Passenger.\+get\+Identifier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Metodo para devolver el identificador del pasajero \begin{DoxyReturn}{Returns}
+Devuelve el atributo privado identifier 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classes_1_1ull_1_1passengers_1_1_passenger_a30bde0502748dd7880d0cec945be22c7}\label{classes_1_1ull_1_1passengers_1_1_passenger_a30bde0502748dd7880d0cec945be22c7}} 
+\index{es.ull.passengers.Passenger@{es.ull.passengers.Passenger}!getName@{getName}}
+\index{getName@{getName}!es.ull.passengers.Passenger@{es.ull.passengers.Passenger}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily String es.\+ull.\+passengers.\+Passenger.\+get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Metodo para devolver el nombre del pasajero \begin{DoxyReturn}{Returns}
+Devuelve el atributo privado name 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classes_1_1ull_1_1passengers_1_1_passenger_ab502f5a4d9dde76595f7d1781683b08e}\label{classes_1_1ull_1_1passengers_1_1_passenger_ab502f5a4d9dde76595f7d1781683b08e}} 
+\index{es.ull.passengers.Passenger@{es.ull.passengers.Passenger}!joinFlight@{joinFlight}}
+\index{joinFlight@{joinFlight}!es.ull.passengers.Passenger@{es.ull.passengers.Passenger}}
+\doxysubsubsection{\texorpdfstring{joinFlight()}{joinFlight()}}
+{\footnotesize\ttfamily void es.\+ull.\+passengers.\+Passenger.\+join\+Flight (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classes_1_1ull_1_1flights_1_1_flight}{Flight}}}]{flight }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Metodo para cambiar el vuelo asignado de un pasajero, si el pasajero no se encuentra en ningun vuelo devuelve un error, al igual que si no se utiliza un vuelo valido para la asignacion 
+\begin{DoxyParams}{Parameters}
+{\em flight} & Vuelo al que se le asignara al pasajero \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classes_1_1ull_1_1passengers_1_1_passenger_a304d20a6a14fc06b986745b345720cde}\label{classes_1_1ull_1_1passengers_1_1_passenger_a304d20a6a14fc06b986745b345720cde}} 
+\index{es.ull.passengers.Passenger@{es.ull.passengers.Passenger}!setFlight@{setFlight}}
+\index{setFlight@{setFlight}!es.ull.passengers.Passenger@{es.ull.passengers.Passenger}}
+\doxysubsubsection{\texorpdfstring{setFlight()}{setFlight()}}
+{\footnotesize\ttfamily void es.\+ull.\+passengers.\+Passenger.\+set\+Flight (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classes_1_1ull_1_1flights_1_1_flight}{Flight}}}]{flight }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Metodo que cambia el vuelo actual por otro 
+\begin{DoxyParams}{Parameters}
+{\em flight} & Nuevo vuelo que sustituira al anterior \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/main/java/es/ull/passengers/Passenger.\+java\end{DoxyCompactItemize}
